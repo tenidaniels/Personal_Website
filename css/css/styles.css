@@ -125,7 +125,7 @@ margin: auto;
     text-decoration: none;
   }
     .whats{
-        color: black;
+        color: #1e8888;
         transition: color 0.2s;
         margin: 0 6px;
     }
@@ -133,13 +133,22 @@ margin: auto;
         color: gray;
     }
     .linked{
-        color: black;
+        color: #1e8888;
         transition: color 0.2s;
         margin: 0 10px;
     }
+
     .linked:hover{
         color: gray;
     }
+.mal{
+    color:#1e8888 ;
+     transition: color 0.2s;
+}
+.mal:hover{
+    color: gray;
+}
+
     .navbar{ display:flex;
          top:0;
           height:10vh; 
