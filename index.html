@@ -9,29 +9,62 @@
 </head>
 <body>
 
-    <nav class="navbar">
-         <div > <h3 class="navbar-brand">Teni.</h3> </div>
-           
-                  <div class="ham">
-                      <span class="bar1"> </span>
-                      <span class="bar1"></span>
-                      <span class="bar1"></span>
+ <nav class="navbar">
+  <div class="container">
 
-                     </div> 
+    <div class="navbar-header">
+      <button class="navbar-toggler" data-toggle="open-navbar1">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a href="#">
+        <h4>tenidaniels<span></span></h4>
+      </a>
+    </div>
 
-                       <ul class="navsub">
-                            <li class="listitem"> <a  href="#abt" class="navlink">About</a> </li>
-
-                             <li class="listitem"> <a   href="#we" class="navlink" >Work-experience</a> </li>
-                             <li class="listitem"> <a  href="#skil" class="navlink">Skills</a> </li>
-                             <li class="listitem"> <a  href="#book" class="navlink">Books</a> </li>
-                               <li class="listitem"> <a  href="#huby" class="navlink">Hobbies</a> </li> 
-                               <li class="listitem"> <a  href="contact-me.html" class="navlink">Contact</a> </li> 
-                             </ul> 
+    <div class="navbar-menu" id="open-navbar1">
+      <ul class="navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="navbar-dropdown">
+          <a href="#" class="dropdown-toggler" data-dropdown="my-dropdown-id">
+            Categories <i class="fa fa-angle-down"></i>
+          </a>
+          <ul class="dropdown" id="my-dropdown-id">
+            <li><a href="#">Actions</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="separator"></li>
+            <li><a href="#">Seprated link</a></li>
+            <li class="separator"></li>
+            <li><a href="#">One more seprated link.</a></li>
+          </ul>
+        </li>
+        <li class="navbar-dropdown">
+          <a href="#" class="dropdown-toggler" data-dropdown="blog">
+            Blog <i class="fa fa-angle-down"></i>
+          </a>
+          <ul class="dropdown" id="blog">
+            <li><a href="#">Some category</a></li>
+            <li><a href="#">Some another category</a></li>
+            <li class="separator"></li>
+            <li><a href="#">Seprated link</a></li>
+            <li class="separator"></li>
+            <li><a href="#">One more seprated link.</a></li>
+          </ul>
+        </li>
+          <li><a href="#we">Work-experience</a></li>
+        <li><a href="#abt">About</a></li>
+        <li><a href="#contact-me.html">Contact</a></li>
+        <li><a href="#huby">Hobbies</a></li>
+          <li><a href="#book">Books</a></li>
+          <li><a href="#skil">Skills</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
                             
-                         <script>const hamburger = document.querySelector(".ham"); const navsub = document.querySelector(".navsub"); hamburger.addEventListener('click', () => { hamburger.classList.toggle("change") 
-                         navsub.classList.toggle("navchange") });</script>
-                        </nav>
+                            
+                         
 
 
 
