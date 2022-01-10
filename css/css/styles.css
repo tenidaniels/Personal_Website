@@ -193,7 +193,7 @@ a {
   text-decoration: none;
 }
 
-.container {
+.container1 {
   width: 1170px;
   position: relative;
   margin: {
@@ -209,7 +209,7 @@ a {
 // Start navbar
 
 .navbar,
-.navbar > .container {
+.navbar > .container1 {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -226,7 +226,7 @@ a {
   padding: $navbar-padding-y $navbar-padding-x;
   border-bottom: 1px solid $border-color;
 
-  .container {
+  .container1 {
     @media (min-width: 576px) {
       max-width: 540px;
     }
