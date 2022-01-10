@@ -163,6 +163,7 @@ margin: auto;
     }
      .listitem { padding:10px;
          list-style:none;
+         text-decoration: none;
          } 
          .navlink{ 
              color:inherit;
