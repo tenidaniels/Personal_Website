@@ -3,39 +3,55 @@
     
 <head>
     <meta charset="utf-8">
-    
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-     <meta name='viewport' content='width=device-width'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link rel="stylesheet" href="css/css/styles.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<link rel="stylesheet" href="./style.css">
    <title> Teni's personal site</title>
 </head>
 <body>
 
-    <nav class="navbar">
-         <div > <h3 class="navbar-brand">tenidaniels</h3> </div>
-           
-                  <div class="ham">
-                      <span class="bar1"> </span>
-                      <span class="bar1"></span>
-                      <span class="bar1"></span>
-
-                     </div> 
-
-                       <ul class="navsub">
-                        <li class="listitem"> <a  href="#hm" class="navlink">Home</a> </li>
-                        <li class="listitem"> <a  href="#abt" class="navlink">About</a> </li>
-
-                             <li class="listitem"> <a   href="#we" class="navlink">Work-experience</a> </li>
-                             <li class="listitem"> <a  href="#skil" class="navlink">Skills</a> </li>
-                             <li class="listitem"> <a  href="#book" class="navlink">Books</a> </li>
-                               <li class="listitem"> <a  href="#huby" class="navlink">Hobbies</a> </li> 
-                               <li class="listitem"> <a  href="contact-me.html" class="navlink">Contact</a> </li> 
-                             </ul> 
+<header><h3 class="logo">tenidaniels</h3>
+    <ul class="nav">
+                        <li class="navlink"> <a  href="#hm">Home &nbsp;</a>
+                         </li>
+                      
+                        <li class="navlink"> <a  href="#abt">About &nbsp;</a>
+                         </li>
+                    
+                             <li class="navlink"> <a href="#we">Experience &nbsp;</a> 
+                            </li>
+                     
+                             <li class="navlink"> <a  href="#skil" >Skills &nbsp;</a> 
+                                </li>
                             
-                         <script>const hamburger = document.querySelector(".ham"); const navsub = document.querySelector(".navsub"); hamburger.addEventListener('click', () => { hamburger.classList.toggle("change") 
-                         navsub.classList.toggle("navchange") });</script>
-                        </nav>
-
+                               <li class="navlink"> <a  href="#huby" >Hobbies &nbsp;</a> 
+                            </li> 
+                        
+                               <li class="navlink"> <a  href="contact-me.html" > Contact &nbsp;</a> 
+                            </li> 
+                             
+                             </ul> 
+                             <div class="burger">
+                                <i class="fas fa-bars"></i>
+                                </div>
+                            </header>
+                            <script >// Selection of HTML objects
+                                const burger = document.querySelector('.burger i');
+                                const nav = document.querySelector('.nav');
+                                
+                                // Defining a function
+                                function toggleNav() {
+                                    burger.classList.toggle('fa-bars');
+                                    burger.classList.toggle('fa-times');
+                                    nav.classList.toggle('nav-active');
+                                }
+                                
+                                // Calling the function after click event occurs
+                                burger.addEventListener('click', function() {
+                                    toggleNav();
+                                })</script>
 
 
 
