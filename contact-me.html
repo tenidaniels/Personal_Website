@@ -14,25 +14,32 @@
 </script>
 </head>
 <body>
-    <nav class="navbar">
-        <div > <h3 class="navbar-brand">tenidaniels</h3> </div>
-          
-                 <div class="ham">
-                     <span class="bar1"> </span>
-                     <span class="bar1"></span>
-                     <span class="bar1"></span>
+    <header><h3 class="logo">tenidaniels</h3>
+        <ul class="nav">
+                            <li class="navlink"> <a  href="#hm">Home</a> </li>
 
-                    </div> 
-
-                      <ul class="navsub">
-                        <li class="listitem"> <a  href="index.html" class="navlink">Home</a> </li>
-                          
-                              <li class="listitem"> <a  href="contact-me.html" class="navlink">Contact</a> </li> 
-                            </ul> 
-                           
-                        <script>const hamburger = document.querySelector(".ham"); const navsub = document.querySelector(".navsub"); hamburger.addEventListener('click', () => { hamburger.classList.toggle("change") 
-                        navsub.classList.toggle("navchange") });</script>
-                       </nav>
+                                   <li class="navlink"> <a  href="contact-me.html" >Contact</a> </li> 
+                                 
+                                 </ul> 
+                                 <div class="burger">
+                                    <i class="fas fa-bars"></i>
+                                    </div>
+                                </header>
+                                <script >// Selection of HTML objects
+                                    const burger = document.querySelector('.burger i');
+                                    const nav = document.querySelector('.nav');
+                                    
+                                    // Defining a function
+                                    function toggleNav() {
+                                        burger.classList.toggle('fa-bars');
+                                        burger.classList.toggle('fa-times');
+                                        nav.classList.toggle('nav-active');
+                                    }
+                                    
+                                    // Calling the function after click event occurs
+                                    burger.addEventListener('click', function() {
+                                        toggleNav();
+                                    })</script>
 
     <h1>My Contact details</h1>
     <p><b>Hostel:</b> Rm 29A, Silver 3 Male hall </p>
