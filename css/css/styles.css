@@ -177,6 +177,7 @@ header {
     display: flex;
     justify-content: space-around;
     width: 30%;
+        spacing: 6px;
     }
     .navlink {
     list-style: none;
