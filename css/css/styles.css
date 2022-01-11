@@ -4,9 +4,14 @@ body{
     background-color: powderblue;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-}   
-
+   }   
+#ci-hero-11 .widget-wrap, #ci-hero-12.widget-wrap:{
+    background-size: auto;
+    background-attachment: scroll;
+}
+.widget-wrap:{
+    background-attachment: fixed;
+}
  hr{
     
      border-style: none;
@@ -177,7 +182,7 @@ margin: auto;
                         background-color:#1e8888; 
                         }
 
-                        @media only screen and (max-width:768px){
+                        @media only screen and (max-width:767px){
                              *{ overflow:hidden; }
                               .navsub{ position:absolute; 
                                 top:10vh;
@@ -193,3 +198,7 @@ margin: auto;
                                       .change .bar1 { transform: rotate(45deg) translate(8px,3px); } 
                                       .change .bar2 { opacity: 0; } 
                                       .change .bar3 { transform: rotate(-45deg) translate(8px,-3px); } }
+         @media(max-width: 767px){
+                                          #ci-hero-11 .widget-wrap:{
+                                              background-attachment: initial;} 
+                                      }
