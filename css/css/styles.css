@@ -205,7 +205,8 @@ header {
                         position: absolute;
                         right: -100%;
                         top: 70px;
-                        width: 50%;
+                        width: 60%;
+                        spacing: 10px;
                         height: calc(100% - 70px);
                         flex-direction: column;
                         justify-content: space-around;
